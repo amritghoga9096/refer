@@ -1,0 +1,129 @@
+/* Reset some default styles */
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHei , sans-serif;
+    
+ }
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+    background-color: black; 
+}
+h1{ 
+    text-align: center;
+}
+
+/* Style the header and navigation bar */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.left-corner button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: -14px;
+}
+
+.center-heading  {
+    font-size: 50px;
+     display: flex;
+     justify-content: center;
+   
+}
+
+/* Style the main content */
+main {
+    padding: 20px;
+}
+
+.invitation-box, .refer-code-box {
+    border: 2px solid #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    box-shadow: -1px 2px 8px #fff;
+}
+.Level-box{
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 30px;
+    margin-right: 30%;
+    background-color: black;
+    margin-left: 20%;
+    margin: 20px;
+    color: #fff;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: -1px 2px 8px #fff;
+
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.copy-box {
+    display: flex;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding:  0.8rem;;
+    border: none;
+    font-size: 18px;
+    color: #0592bd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(26, 144, 191);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Style the QR code */
+.qr-code {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: -40px;
+    
+}
+
+.qr-code img{
+    box-shadow: -1px 2px 8px #fff;
+    border-radius: 10px;
+}
+/* Media query for smartphone displays */
+@media screen and (max-width: 768px) {
+    .center-heading h1 {
+        font-size: 20px;
+    }
+    .invitation-box, .refer-code-box {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+}
